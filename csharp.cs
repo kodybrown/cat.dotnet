@@ -9,6 +9,9 @@ namespace cat.csharp
 {
 	public class csharp : ICataloger
 	{
+		public string Name { get { return _name; } }
+		private string _name = "csharp";
+
 		public string Description { get { return _description; } }
 		private string _description = "C# source files (.cs).";
 
