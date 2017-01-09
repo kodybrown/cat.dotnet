@@ -1,26 +1,26 @@
-//
-// Copyright (C) 2006-2011 Kody Brown (kody@bricksoft.com).
-//
-// MIT License:
-//
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to
-// deal in the Software without restriction, including without limitation the
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-// sell copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-//
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-// DEALINGS IN THE SOFTWARE.
-//
+/*!
+	Copyright (C) 2006-2013 Kody Brown (kody@bricksoft.com).
+
+	MIT License:
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to
+	deal in the Software without restriction, including without limitation the
+	rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+	sell copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in
+	all copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+	FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+	DEALINGS IN THE SOFTWARE.
+*/
 
 using System;
 using System.Collections.Generic;
@@ -58,7 +58,7 @@ namespace Bricksoft.PowerCode
 	{
 
 		/// <summary>
-		/// 
+		///
 		/// </summary>
 		/// <param name="key"></param>
 		/// <returns></returns>
@@ -294,7 +294,7 @@ namespace Bricksoft.PowerCode
 
 		/// <summary>
 		/// Returns a string collection that contains the substrings that are
-		/// delimited by <paramref name="separator"/>. 
+		/// delimited by <paramref name="separator"/>.
 		/// </summary>
 		/// <param name="Value"></param>
 		/// <param name="separator"></param>
@@ -562,7 +562,7 @@ namespace Bricksoft.PowerCode
 		// ----- WrapString() -----------------------------------------------------------------------------------------------------------------------------
 
 		/// <summary>
-		/// 
+		///
 		/// </summary>
 		/// <param name="me"></param>
 		/// <param name="width"></param>
@@ -898,7 +898,7 @@ namespace Bricksoft.PowerCode
 		// ----- TrimStartAndEnd() -----------------------------------------------------------------------------------------------------------------------------
 
 		/// <summary>
-		/// If the string starts with trimStart and ends with trimEnd, 
+		/// If the string starts with trimStart and ends with trimEnd,
 		/// it will remove them from the string.
 		/// </summary>
 		/// <remarks>Performs an InvariantCulture comparison.</remarks>
@@ -909,7 +909,7 @@ namespace Bricksoft.PowerCode
 		public static string TrimStartAndEnd( this string Value, string trimStart, string trimEnd ) { return Value.TrimStartAndEnd(StringComparison.InvariantCulture, trimStart, trimEnd); }
 
 		/// <summary>
-		/// If the string starts with trimStart and ends with trimEnd, 
+		/// If the string starts with trimStart and ends with trimEnd,
 		/// it will remove them from the string.
 		/// </summary>
 		/// <param name="Value"></param>
@@ -937,7 +937,7 @@ namespace Bricksoft.PowerCode
 		// ----- RemoveStart() -----------------------------------------------------------------------------------------------------------------------------
 
 		/// <summary>
-		/// 
+		///
 		/// </summary>
 		/// <param name="Value"></param>
 		/// <param name="length"></param>
@@ -1141,7 +1141,7 @@ namespace Bricksoft.PowerCode
 		/* ----- string EndsWith(string[] Strings) -------------------------------------------------------------- */
 
 		/// <summary>
-		/// 
+		///
 		/// </summary>
 		/// <param name="me"></param>
 		/// <param name="Strings"></param>
@@ -1149,7 +1149,7 @@ namespace Bricksoft.PowerCode
 		public static bool EndsWith( string me, string[] Strings ) { return EndsWith(me, Strings, StringComparison.CurrentCulture); }
 
 		/// <summary>
-		/// 
+		///
 		/// </summary>
 		/// <param name="me"></param>
 		/// <param name="Strings"></param>
@@ -1205,7 +1205,7 @@ namespace Bricksoft.PowerCode
 		/* ----- string Contains() -------------------------------------------------------------- */
 
 		/// <summary>
-		/// 
+		///
 		/// </summary>
 		/// <param name="me"></param>
 		/// <param name="Value"></param>
@@ -1221,7 +1221,7 @@ namespace Bricksoft.PowerCode
 			}
 			if (Value == null) {
 				return false;
-				//throw new ArgumentNullException("Value"); 
+				//throw new ArgumentNullException("Value");
 			}
 
 			return me.IndexOf(Value, StringComparison) > -1;
@@ -1413,7 +1413,7 @@ namespace Bricksoft.PowerCode
 		/* ----- string ToBoolean() ----------------------------------------------------------------- */
 
 		/// <summary>
-		/// 
+		///
 		/// </summary>
 		/// <param name="me"></param>
 		/// <returns></returns>
@@ -1483,14 +1483,14 @@ namespace Bricksoft.PowerCode
 		/* ----- List<char> Contains() -------------------------------------------------------------- */
 
 		/// <summary>
-		/// 
+		///
 		/// </summary>
 		/// <param name="me"></param>
 		/// <returns></returns>
 		public static string ToProperCase( this string me ) { return ToProperCase(me, CultureInfo.CurrentUICulture); }
 
 		/// <summary>
-		/// 
+		///
 		/// </summary>
 		/// <param name="me"></param>
 		/// <param name="culture"></param>
@@ -1570,7 +1570,7 @@ namespace Bricksoft.PowerCode
 		// ----- ContainsKey() -----------------------------------------------------------------------------------------------------------------------------
 
 		/// <summary>
-		/// 
+		///
 		/// </summary>
 		/// <param name="me"></param>
 		/// <param name="Value"></param>
@@ -1594,7 +1594,7 @@ namespace Bricksoft.PowerCode
 		// ----- CountOccurrances() -----------------------------------------------------------------------------------------------------------------------------
 
 		/// <summary>
-		/// 
+		///
 		/// </summary>
 		/// <param name="me"></param>
 		/// <param name="Value"></param>
@@ -2183,7 +2183,7 @@ namespace Bricksoft.PowerCode
 		// ----- List<string> LoadFromFile() and SaveToFile() ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 		/// <summary>
-		/// 
+		///
 		/// </summary>
 		/// <param name="me"></param>
 		/// <param name="fileName"></param>
@@ -2218,7 +2218,7 @@ namespace Bricksoft.PowerCode
 		}
 
 		/// <summary>
-		/// 
+		///
 		/// </summary>
 		/// <param name="me"></param>
 		/// <param name="fileName"></param>
@@ -2226,7 +2226,7 @@ namespace Bricksoft.PowerCode
 		public static bool SaveToFile( this List<string> me, string fileName ) { return SaveToFile(me, fileName, true); }
 
 		/// <summary>
-		/// 
+		///
 		/// </summary>
 		/// <param name="me"></param>
 		/// <param name="fileName"></param>
@@ -2270,7 +2270,7 @@ namespace Bricksoft.PowerCode
 		// ----- List<string> LoadFromFile() and SaveToFile() ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 		/// <summary>
-		/// 
+		///
 		/// </summary>
 		/// <param name="me"></param>
 		/// <param name="fileName"></param>
@@ -2330,7 +2330,7 @@ namespace Bricksoft.PowerCode
 		}
 
 		public new bool AddRange(IEnumerable<string> collection) {
-			
+
 			return false;
 		}
 	}*/
